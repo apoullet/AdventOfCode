@@ -1,1 +1,0 @@
-print(sum(map(lambda xxs: (all(map(lambda xx: xx<0,xxs)) or all(map(lambda xx: xx>0,xxs))) and (all(map(lambda xx: abs(xx)>0 and abs(xx)<4,xxs))),list(map(lambda xs:list(map(lambda p:p[0]-p[1],zip((t:=list(map(int,xs)))[1:],t[:-1]))),map(lambda l:l.split(' '),map(str.strip,open(__import__('sys').argv[1]).readlines())))))))

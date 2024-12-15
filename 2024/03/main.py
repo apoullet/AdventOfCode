@@ -1,0 +1,1 @@
+print("\n".join([str(sum(map(lambda p:int(p[0])*int(p[1]),__import__('re').findall(r"mul\((\d{1,3}),(\d{1,3})\)","".join(__import__('re').split(pattern,open(__import__('sys').argv[1]).readline().strip())))))) for pattern in [r'antoine',r'don\'t\(\).*?do\(\)']]))
